@@ -32,7 +32,19 @@ class LinkedList:
                 current.next = new_node
                 break
             current = current.next
-    
+
+    def deleteNode(self, key):
+
+        current = self.head
+        if (current is not None) and (current.data ==key):
+            self.head = current.next
+            return 
+        while (current is not None):
+            if current.data == key:
+                break
+            prev = current
+            current = current.next
+        prev.next = current.next
 
 
     def printList(self):
@@ -47,4 +59,5 @@ for i in range(1,11):
 
 singlyLL.insertFront(10)
 singlyLL.insertMiddle(5, 100)
+singlyLL.deleteNode(5)
 singlyLL.printList()

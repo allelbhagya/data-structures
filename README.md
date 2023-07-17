@@ -7,7 +7,6 @@
 - queue
 - circular queue
 - priority queue
-- hashing
 
 ### linked list
 

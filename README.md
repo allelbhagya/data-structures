@@ -19,7 +19,6 @@
 - basic
 - bfs
 - dfs
-- minimum spanning tree
 - topological sorting
 - longest path in dag
 
